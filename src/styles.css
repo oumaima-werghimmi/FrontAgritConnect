@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* styles.css (ou styles.scss) */
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+  
+  .app-name {
+    margin-left: 16px;
+    margin-right: auto;
+  }
+  
+  .app-logo {
+    height: 24px;
+  }
+  
