@@ -1,0 +1,18 @@
+<!-- login.component.html -->
+
+<div class="login-container">
+    <h2>Connexion Agriculteur</h2>
+    
+    <form [formGroup]="argiculteurForm" (ngSubmit)="login()" class="needs-validation" novalidate>
+      <label for="username">Email</label>
+      <input type="text" id="username" name="username" formControlName="mail" placeholder="Votre mail" required>
+  
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" formControlName="pwd" placeholder="Votre mot de passe" required>
+  
+      <button type="submit">Se connecter</button>
+    </form>
+  
+    <p>Vous n'avez pas de compte ? <a routerLink="/inscription">Créer un compte</a></p>
+  </div>
+  

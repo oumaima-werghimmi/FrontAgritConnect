@@ -1,0 +1,42 @@
+<div class="sidebar"  style="background-image: url('../assets/image\ \(1\).jpg');">
+    <div class="logo">
+      <i class="fas fa-seedling"></i>
+      <span>AgriConnect</span>
+    </div>
+    <div class="nav-links">
+      <a routerLink="/dashboard" routerLinkActive="active">
+        <i class="fas fa-tachometer-alt"></i>
+        Tableau de Bord
+      </a>
+      <a routerLink="/gestion-parcelle" routerLinkActive="active">
+        <i class="fas fa-map"></i>
+        Gestion des Parcelles
+      </a>
+      <a routerLink="/gestion-ressource" routerLinkActive="active">
+        <i class="fas fa-cogs"></i>
+        Gestion des Ressources
+      </a>
+  
+      <a routerLink="/gestion-culture" routerLinkActive="active" (click)="isGestionCultureActive = !isGestionCultureActive">
+        <i class="fas fa-leaf"></i>
+        Gestion de la Culture
+      </a> 
+      <!-- Sous-liste déroulante pour la gestion de la culture -->
+       <ul *ngIf="isGestionCultureActive">
+        <li><a routerLink="/gestion-culture/plantation" routerLinkActive="active">Plantation</a></li>
+        <li><a routerLink="/gestion-culture/recolte" routerLinkActive="active">Récolte</a></li>
+      </ul>
+      <a routerLink="/gestion-article" routerLinkActive="active">
+        <i class="fas fa-file-alt"></i>
+        Ajouter un Article
+      </a>
+      
+      <a routerLink="/gestion-commentaire" routerLinkActive="active">
+        <i class="fas fa-comments"></i>
+        Consulter les Commentaires
+      </a>
+    </div>
+  </div>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div> 

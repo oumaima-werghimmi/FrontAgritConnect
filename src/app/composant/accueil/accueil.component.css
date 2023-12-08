@@ -1,0 +1,48 @@
+/* home.component.css */
+
+.home-container {
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajout d'une légère ombre */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* Couleur de fond */
+  }
+  
+  .home-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+ 
+
+  .home-container h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-container p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  .home-container .description {
+    text-align: justify;
+    line-height: 1.6; /* Ajustez la hauteur de ligne pour une meilleure lisibilité */
+  }
+  
+  .highlighted-text {
+    text-align: center;
+    margin: 20px 0; /* Ajoute une marge autour du texte centré */
+  }
+  
+  .highlight-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50; /* Couleur verte */
+    margin-bottom: 10px;
+    font-family: 'Your Attractive Font', sans-serif; /* Remplacez 'Your Attractive Font' par la police de votre choix */
+  }

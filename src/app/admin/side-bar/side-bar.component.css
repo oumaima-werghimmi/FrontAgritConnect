@@ -1,0 +1,54 @@
+.router-outlet {
+    margin-left: 200px; /* Assurez-vous d'ajuster la marge pour éviter la superposition avec le sidebar */
+  }
+
+
+  
+
+
+  
+
+  .sidebar {
+    height: 100%;
+    width: 250px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    color: #fff;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .logo i {
+    margin-right: 5px;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: #28a745;
+  }
+  
+  .main-content {
+    margin-top: 5%;
+    margin-left: 300px; /* Ajustez cette marge en fonction de la largeur de votre barre latérale */
+    padding: 20px; /* Ajoutez un peu d'espace pour éviter que le contenu ne colle à la barre latérale */
+  }
+
+
+
+
+  
