@@ -13,13 +13,13 @@ export class InscriptionService {
 constructor(private http: HttpClient) {}
 
 
-getAgriculteur(): Observable<Agriculteur[]> {
-  return this.http.get<Agriculteur[]>(this.apiUrl);
+getAgriculteur(): Observable<Agriculteur> {
+  return this.http.get<Agriculteur>(this.apiUrl);
 }
 registerUser(userData: any): Observable<any> {
   return this.http.post(`${this.apiUrl}`, userData);
   
 }
 
-user: Agriculteur | undefined;
+user!: Agriculteur;
 }

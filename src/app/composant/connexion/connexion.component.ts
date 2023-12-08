@@ -25,9 +25,9 @@ export class ConnexionComponent {
 
   login(){
     const { mail, pwd } = this.argiculteurForm.value;
-    const [user] = this.lesagriculteur.filter((user) => user.mail === mail && user.pwd === pwd) // returns array of filtered users
+    const [user] = this.lesagriculteur.filter((user) => user.mail === mail && user.pwd === pwd) 
     if (user) {
-      this.inscription.user = user; // better not store all user because password can be stolen.
+      this.inscription.user = user; 
       
         this.router.navigate(['admin'])
       } 
